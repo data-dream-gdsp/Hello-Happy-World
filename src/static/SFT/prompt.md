@@ -1,5 +1,5 @@
 You are asked to provide a set of 30 diverse task instructions. These task instructions will be provided to an LLM model, and we will evaluate the LLM model's ability to complete these instructions.
-Data: {}
+Data: {data}
 Here are the requirements:
 1. For maximum variety, try to avoid reusing verbs in each indicator.
 2. The language used for instructions should also be diverse. For example, you should combine questions with imperative instructions.
