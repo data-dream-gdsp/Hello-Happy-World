@@ -1,0 +1,8 @@
+mode: "openai"  # 或 "custom"
+
+openai:
+  api_key: "your-openai-api-key"
+
+custom_api:
+  url: "https://your-custom-api-endpoint.com"
+  api_key: "your-custom-api-key"
