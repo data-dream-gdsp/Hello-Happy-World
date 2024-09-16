@@ -11,4 +11,5 @@ Here are the requirements:
 8. Not all instructions need to be entered. For example, when a directive asks for some general information, such as "what is the highest peak in the world," there is no need to provide specific context. In this case, we simply place "<noinput>" in the input field.
 9. Outputs shall be appropriate responses to instructions and inputs. Make sure the output does not exceed 100 words.
 10. Make sure the output is grammatically correct and include punctuation if necessary.
+11. Let's think step by step
 30 tasks list:
