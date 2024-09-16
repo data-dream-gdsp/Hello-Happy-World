@@ -1,5 +1,7 @@
 # Hello-Happy-World
 
+![](/.github/logo.png)
+
 Hello-Happy-World is an AI-powered automatic dataset creation tool that supports generating LoRA datasets and SFT question sets from the web.
 
 ## Features
