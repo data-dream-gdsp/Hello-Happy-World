@@ -1,6 +1,7 @@
 import argparse
 from rich.console import Console
 from rich.prompt import Prompt
+from AI.model import LLM
 
 console = Console()
 
@@ -19,10 +20,25 @@ def print_logo():
     """, justify="center")
 
 def make(task_type, file_name):
+    m_LLM = LLM('AI/config.yaml')
     if task_type == "LoRA":
         console.print(f"Generating LoRA datasets and saving to [bold green]{file_name}[/bold green]...")
+        with open(file_name, 'w') as f:
+            with open('static/LoRA/prompt.md', 'r') as prompt_file:
+                prompt = prompt_file.read()
+                response = m_LLM.ask(prompt)
+                f.write(response)
+        console.print("Finish!")
+
     elif task_type == "SFT":
         console.print(f"Generating SFT question sets and saving to [bold green]{file_name}[/bold green]...")
+        with open(file_name, 'w') as f:
+            with open('static/SFT/prompt.md', 'r') as prompt_file:
+                prompt = prompt_file.read()
+                response = m_LLM.ask(prompt)
+                f.write(response)
+        console.print("Finish!")
+
     else:
         console.print("[bold red]Error:[/bold red] Invalid task type.")
 
