@@ -2,10 +2,8 @@ import argparse
 from rich.console import Console
 from rich.prompt import Prompt
 
-# 初始化 rich 控制台
 console = Console()
 
-# 打印 Logo
 def print_logo():
     console.print(r"""
     [bold blue]
